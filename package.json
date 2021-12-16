@@ -1,6 +1,5 @@
 {
   "name": "layer0-ionic-react-example",
-  "version": "0.0.1",
   "dependencies": {
     "@capacitor/app": "1.0.6",
     "@capacitor/core": "3.3.2",
@@ -44,7 +43,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "layer0 deploy"
+    "layer0:deploy": "layer0 deploy",
+    "format": "prettier --write '**/*' --ignore-unknown"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2
   },
   "eslintConfig": {
     "extends": [
@@ -69,7 +74,7 @@
     "@layer0/cli": "^4.6.0",
     "@layer0/core": "^4.6.0",
     "@layer0/devtools": "^4.6.0",
-    "@layer0/prefetch": "^4.6.0"
-  },
-  "description": "An Ionic project"
+    "@layer0/prefetch": "^4.6.0",
+    "prettier": "^2.5.1"
+  }
 }

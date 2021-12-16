@@ -44,7 +44,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "layer0 deploy"
+    "layer0:deploy": "layer0 deploy"
   },
   "eslintConfig": {
     "extends": [
